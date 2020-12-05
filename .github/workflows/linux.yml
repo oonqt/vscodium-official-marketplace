@@ -1,11 +1,8 @@
 name: linux_build
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
-  push:
-  pull_request:
-    branches: [ master ]
+  workflow_dispatch:
+      
 
 jobs:
   linux:
